@@ -67,6 +67,7 @@ await mkdir(path.join(dist, "terms"), { recursive: true });
 await writeFile(path.join(dist, "terms/index.html"), terms);
 const notFound = html
   .replace(/<title>[^<]*<\/title>/, "<title>Page Not Found | Alex</title>")
+  .replace(/\s*<link\b[^>]*rel="canonical"[^>]*>/, "")
   .replace(
     'name="robots" content="index, follow"',
     'name="robots" content="noindex, follow"',

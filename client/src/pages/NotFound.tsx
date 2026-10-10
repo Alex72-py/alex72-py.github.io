@@ -4,6 +4,14 @@ import { ArrowLeft } from "lucide-react";
 export default function NotFound() {
   useEffect(() => {
     document.title = "Page Not Found | Alex";
+    const robots = document.querySelector<HTMLMetaElement>(
+      'meta[name="robots"]',
+    );
+    const previous = robots?.content;
+    if (robots) robots.content = "noindex, follow";
+    return () => {
+      if (robots && previous) robots.content = previous;
+    };
   }, []);
   return (
     <main className="page-width not-found">

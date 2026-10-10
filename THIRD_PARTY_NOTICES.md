@@ -1,12 +1,10 @@
-# Design and component references
+# Third-party notices
 
-The artwork is supplied by Alex. The drawings have not been AI-generated or regenerated for this redesign.
+## React Bits — Tilted Card
 
-## React Bits
+The interaction in `client/src/components/TiltMount.tsx` is adapted from [React Bits Tilted Card](https://github.com/DavidHDev/react-bits/tree/main/src/ts-default/Components/TiltedCard).
 
-The pointer-to-rotation/spring interaction in `client/src/components/TiltMount.tsx` is adapted from [React Bits Tilted Card](https://github.com/DavidHDev/react-bits/tree/main/src/ts-default/Components/TiltedCard). The adaptation uses the existing `framer-motion` package, smaller movement, responsive sizing, and reduced-motion/touch guards. Other portfolio layouts are project-specific.
-
-The following upstream license applies to that adapted component:
+The following license applies to that component, not to the artwork in this repository.
 
 MIT + Commons Clause License Condition v1.0
 
@@ -33,7 +31,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-## Anti Slop
-
-[Anti Slop](https://github.com/miqdadbadjuber/anti-slop) by Miqdad Badjuber was consulted as a design and quality reference. No upstream source code or skill files are bundled into the production application. The design decisions applied are documented in `DESIGN.md`.
